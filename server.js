@@ -23,16 +23,32 @@ app.post('/usuarios', async (req, res) => {
     res.status(500).json({ erro: 'Erro ao criar usuário' });
   }
 });
-// requisição GET
+// Requisição GET com filtro opcional por query string
 app.get('/usuarios', async (req, res) => {
   try {
-    const user = await prisma.user.findMany();
-    res.status(200).json(user);
+    const { email, name, age } = req.query;
+
+    let users = [];
+
+    if (email || name || age) {
+      users = await prisma.user.findMany({
+        where: {
+          ...(email && { email }),
+          ...(name && { name }),
+          ...(age && { age: Number(age) }),
+        },
+      });
+    } else {
+      users = await prisma.user.findMany();
+    }
+
+    res.status(200).json(users);
   } catch (error) {
     console.error('Erro ao buscar usuários:', error);
     res.status(500).json({ erro: 'Erro ao buscar usuários' });
   }
 });
+
 
 
 //requisição PUT
