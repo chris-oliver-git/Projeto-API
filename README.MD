@@ -1,5 +1,6 @@
 # Sistema para Cadastro de Usuário #
 ## Este sistema possui back-end e conexão com o MongoDB ##
+O repositório Cadastro-de-Usuários possui o código front-end da aplicação.
 
 
 Aplicação desenvolvida em **React** e **Javascript**, por este motivo, não postei o link da página inicial pois precisa iniciar o servidor.
