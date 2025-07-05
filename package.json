@@ -2,30 +2,27 @@
   "name": "projeto-api",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/chris-oliver-git/Projeto-API#readme",
-  "bugs": {
-    "url": "https://github.com/chris-oliver-git/Projeto-API/issues"
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chris-oliver-git/Projeto-API.git"
   },
-  "license": "ISC",
+  "keywords": [],
   "author": "",
-  "type": "module",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris-oliver-git/Projeto-API/issues"
   },
+  "homepage": "https://github.com/chris-oliver-git/Projeto-API#readme",
   "dependencies": {
-    "@prisma/client": "^6.10.1",
+    "@prisma/client": "^6.11.1",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
-    "type": "module"
-  },
-  "devDependencies": {
-    "prisma": "^6.10.1"
+    "prisma": "^6.11.1"
   }
 }
-
