@@ -12,8 +12,8 @@ Aplicação desenvolvida em **React** e **Javascript**, por este motivo, não po
 
 ### Layout da página Inicial ###
 
-![](/my-cadastro-usuarios-app/inicial-cadastro.png)
+![](/src/inicial-cadastro.png)
 
 ### Cadastro dos usuários ###
-![](/my-cadastro-usuarios-app/dados-cadastro.png)
+![](/src/dados-cadastro.png)
 
